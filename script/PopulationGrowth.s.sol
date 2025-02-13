@@ -15,9 +15,9 @@ contract PopulationGrowthScript is Script {
         populationGrowth = new PopulationGrowth();
 
         // Call simulateGrowth
-        uint initialPopulation = 1000;
-        uint growthRatePercent = 5;
-        uint _years = 10;
+        uint256 initialPopulation = 1000;
+        uint256 growthRatePercent = 5;
+        uint256 _years = 10;
         populationGrowth.simulateGrowth(initialPopulation, growthRatePercent, _years);
 
         vm.stopBroadcast();
