@@ -30,5 +30,19 @@ Example deployment on testnet:
 
 - [Contract deployment](https://sepolia.etherscan.io/tx/0x593b84e8b4a99b51bd28afd15cf7683d3a9f0199032c021d59d3a2237f6c3a81)
 - [Contract](https://sepolia.etherscan.io/address/0x57a18da55088581055defa7cb584b55dd7d33b66)
-- [Simulation transition](https://sepolia.etherscan.io/tx/0x23c38ce613260b145ad53d7a6f43d96a22db7c7c23247249b071988074679768)
+- [Simulation transaction](https://sepolia.etherscan.io/tx/0x23c38ce613260b145ad53d7a6f43d96a22db7c7c23247249b071988074679768)
 - [Simulation logs](https://sepolia.etherscan.io/tx/0x23c38ce613260b145ad53d7a6f43d96a22db7c7c23247249b071988074679768#eventlog)
+
+## [Bell State Simulation](src/QuantumEntanglement.sol)
+
+Simulate the two qubit operations needed to create a Bell state.
+The Bell state is a maximally entangled state of two qubits.
+Entry point is the `createBellState` function.
+Takes no inputs.
+Returns the state vector of the two qubits after the operations. The operations are performed with fixed point integer with base scaling factor as 1000.
+Example deployment on testnet:
+
+- [Contract deployment](https://sepolia.etherscan.io/tx/0x5931d9e5c3fcd19ead83f003a59f10e1a1dd6471ce4bc334ee750d0787d4fd90)
+- [Contract](https://sepolia.etherscan.io/address/0x33049afb04dd18059a7fa031a0d90247079f4735)
+- [Simulation transaction](https://sepolia.etherscan.io/tx/0x4f88a06fe28f80f3b5343fc335b0a10f51def1cbc9ecc4b6830ed8245fdabe72)
+- [Simulation logs](https://sepolia.etherscan.io/tx/0x4f88a06fe28f80f3b5343fc335b0a10f51def1cbc9ecc4b6830ed8245fdabe72#eventlog)
