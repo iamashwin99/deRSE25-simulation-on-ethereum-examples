@@ -26,7 +26,7 @@ Takes inputs:
 - Initial population
 - Growth rate per year (as a percentage)
 - Number of years to simulate
-Example deployment on testnet:
+Example deployment on the testnet:
 
 - [Contract deployment](https://sepolia.etherscan.io/tx/0x593b84e8b4a99b51bd28afd15cf7683d3a9f0199032c021d59d3a2237f6c3a81)
 - [Contract](https://sepolia.etherscan.io/address/0x57a18da55088581055defa7cb584b55dd7d33b66)
@@ -39,8 +39,8 @@ Simulate the two qubit operations needed to create a Bell state.
 The Bell state is a maximally entangled state of two qubits.
 Entry point is the `createBellState` function.
 Takes no inputs.
-Returns the state vector of the two qubits after the operations. The operations are performed with fixed point integer with base scaling factor as 1000.
-Example deployment on testnet:
+Returns the state vector of the two qubits after the operations. The operations are performed with fixed point integers with a base scaling factor of 1000.
+Example deployment on the testnet:
 
 - [Contract deployment](https://sepolia.etherscan.io/tx/0x5931d9e5c3fcd19ead83f003a59f10e1a1dd6471ce4bc334ee750d0787d4fd90)
 - [Contract](https://sepolia.etherscan.io/address/0x33049afb04dd18059a7fa031a0d90247079f4735)
