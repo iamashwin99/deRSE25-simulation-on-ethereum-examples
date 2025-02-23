@@ -1,6 +1,17 @@
 #include <iostream>
 #include <cstdlib>
 
+/**
+ * @brief Simulates a single step in a 1D random walk.
+ *
+ * Given a current position and a random integer, this function determines the next position
+ * in the random walk. The step direction (either +1 or -1) is determined by whether the
+ * random integer is even or odd.
+ *
+ * @param position The current position in the 1D random walk.
+ * @param rand_int A random integer used to determine the step direction. If even, the step is +1; otherwise, it's -1.
+ * @return The new position after taking a single step.
+ */
 int random_walk_step(int position, int rand_int) {
     return position + (rand_int % 2 == 0 ? 1 : -1);
 }
