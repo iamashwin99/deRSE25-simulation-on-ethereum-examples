@@ -13,3 +13,4 @@ docs/
 # Dotenv file
 .env
 broadcast/**/run-latest.json
+src/1d-RandomWalk/random_walk
