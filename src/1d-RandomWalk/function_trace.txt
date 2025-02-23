@@ -1,0 +1,202 @@
+Enter: main()
+  Enter: random_walk_step(0, 71876166)
+  Exit: random_walk_step(0, 71876166) -> 1
+  Enter: random_walk_step(1, 708592740)
+  Exit: random_walk_step(1, 708592740) -> 2
+  Enter: random_walk_step(2, 1483128881)
+  Exit: random_walk_step(2, 1483128881) -> 1
+  Enter: random_walk_step(1, 907283241)
+  Exit: random_walk_step(1, 907283241) -> 0
+  Enter: random_walk_step(0, 442951012)
+  Exit: random_walk_step(0, 442951012) -> 1
+  Enter: random_walk_step(1, 537146758)
+  Exit: random_walk_step(1, 537146758) -> 2
+  Enter: random_walk_step(2, 1366999021)
+  Exit: random_walk_step(2, 1366999021) -> 1
+  Enter: random_walk_step(1, 1854614940)
+  Exit: random_walk_step(1, 1854614940) -> 2
+  Enter: random_walk_step(2, 647800535)
+  Exit: random_walk_step(2, 647800535) -> 1
+  Enter: random_walk_step(1, 53523743)
+  Exit: random_walk_step(1, 53523743) -> 0
+  Enter: random_walk_step(0, 783815874)
+  Exit: random_walk_step(0, 783815874) -> 1
+  Enter: random_walk_step(1, 1643643143)
+  Exit: random_walk_step(1, 1643643143) -> 0
+  Enter: random_walk_step(0, 682599717)
+  Exit: random_walk_step(0, 682599717) -> -1
+  Enter: random_walk_step(-1, 291474504)
+  Exit: random_walk_step(-1, 291474504) -> 0
+  Enter: random_walk_step(0, 229233696)
+  Exit: random_walk_step(0, 229233696) -> 1
+  Enter: random_walk_step(1, 1633529762)
+  Exit: random_walk_step(1, 1633529762) -> 2
+  Enter: random_walk_step(2, 175389892)
+  Exit: random_walk_step(2, 175389892) -> 3
+  Enter: random_walk_step(3, 1183169448)
+  Exit: random_walk_step(3, 1183169448) -> 4
+  Enter: random_walk_step(4, 1212580698)
+  Exit: random_walk_step(4, 1212580698) -> 5
+  Enter: random_walk_step(5, 1596161259)
+  Exit: random_walk_step(5, 1596161259) -> 4
+  Enter: random_walk_step(4, 2108313867)
+  Exit: random_walk_step(4, 2108313867) -> 3
+  Enter: random_walk_step(3, 469976352)
+  Exit: random_walk_step(3, 469976352) -> 4
+  Enter: random_walk_step(4, 975807809)
+  Exit: random_walk_step(4, 975807809) -> 3
+  Enter: random_walk_step(3, 1113801033)
+  Exit: random_walk_step(3, 1113801033) -> 2
+  Enter: random_walk_step(2, 1232315727)
+  Exit: random_walk_step(2, 1232315727) -> 1
+  Enter: random_walk_step(1, 1192349579)
+  Exit: random_walk_step(1, 1192349579) -> 0
+  Enter: random_walk_step(0, 1564541169)
+  Exit: random_walk_step(0, 1564541169) -> -1
+  Enter: random_walk_step(-1, 1350496504)
+  Exit: random_walk_step(-1, 1350496504) -> 0
+  Enter: random_walk_step(0, 1709672141)
+  Exit: random_walk_step(0, 1709672141) -> -1
+  Enter: random_walk_step(-1, 1253520176)
+  Exit: random_walk_step(-1, 1253520176) -> 0
+  Enter: random_walk_step(0, 590056433)
+  Exit: random_walk_step(0, 590056433) -> -1
+  Enter: random_walk_step(-1, 1781548307)
+  Exit: random_walk_step(-1, 1781548307) -> -2
+  Enter: random_walk_step(-2, 1962112916)
+  Exit: random_walk_step(-2, 1962112916) -> -1
+  Enter: random_walk_step(-1, 2073185314)
+  Exit: random_walk_step(-1, 2073185314) -> 0
+  Enter: random_walk_step(0, 541347900)
+  Exit: random_walk_step(0, 541347900) -> 1
+  Enter: random_walk_step(1, 257580280)
+  Exit: random_walk_step(1, 257580280) -> 2
+  Enter: random_walk_step(2, 462848424)
+  Exit: random_walk_step(2, 462848424) -> 3
+  Enter: random_walk_step(3, 1908346921)
+  Exit: random_walk_step(3, 1908346921) -> 2
+  Enter: random_walk_step(2, 2112195221)
+  Exit: random_walk_step(2, 2112195221) -> 1
+  Enter: random_walk_step(1, 1110648960)
+  Exit: random_walk_step(1, 1110648960) -> 2
+  Enter: random_walk_step(2, 1961870665)
+  Exit: random_walk_step(2, 1961870665) -> 1
+  Enter: random_walk_step(1, 748527447)
+  Exit: random_walk_step(1, 748527447) -> 0
+  Enter: random_walk_step(0, 606808455)
+  Exit: random_walk_step(0, 606808455) -> -1
+  Enter: random_walk_step(-1, 496986734)
+  Exit: random_walk_step(-1, 496986734) -> 0
+  Enter: random_walk_step(0, 1040001951)
+  Exit: random_walk_step(0, 1040001951) -> -1
+  Enter: random_walk_step(-1, 836042151)
+  Exit: random_walk_step(-1, 836042151) -> -2
+  Enter: random_walk_step(-2, 2130516497)
+  Exit: random_walk_step(-2, 2130516497) -> -3
+  Enter: random_walk_step(-3, 1215391843)
+  Exit: random_walk_step(-3, 1215391843) -> -4
+  Enter: random_walk_step(-4, 2019211600)
+  Exit: random_walk_step(-4, 2019211600) -> -3
+  Enter: random_walk_step(-3, 1195613547)
+  Exit: random_walk_step(-3, 1195613547) -> -4
+  Enter: random_walk_step(-4, 664069454)
+  Exit: random_walk_step(-4, 664069454) -> -3
+  Enter: random_walk_step(-3, 1980041819)
+  Exit: random_walk_step(-3, 1980041819) -> -4
+  Enter: random_walk_step(-4, 1665589900)
+  Exit: random_walk_step(-4, 1665589900) -> -3
+  Enter: random_walk_step(-3, 1639877263)
+  Exit: random_walk_step(-3, 1639877263) -> -4
+  Enter: random_walk_step(-4, 946359204)
+  Exit: random_walk_step(-4, 946359204) -> -3
+  Enter: random_walk_step(-3, 750421979)
+  Exit: random_walk_step(-3, 750421979) -> -4
+  Enter: random_walk_step(-4, 684743195)
+  Exit: random_walk_step(-4, 684743195) -> -5
+  Enter: random_walk_step(-5, 363416725)
+  Exit: random_walk_step(-5, 363416725) -> -6
+  Enter: random_walk_step(-6, 2100918483)
+  Exit: random_walk_step(-6, 2100918483) -> -7
+  Enter: random_walk_step(-7, 246931688)
+  Exit: random_walk_step(-7, 246931688) -> -6
+  Enter: random_walk_step(-6, 1616936901)
+  Exit: random_walk_step(-6, 1616936901) -> -7
+  Enter: random_walk_step(-7, 543491269)
+  Exit: random_walk_step(-7, 543491269) -> -8
+  Enter: random_walk_step(-8, 2028479995)
+  Exit: random_walk_step(-8, 2028479995) -> -9
+  Enter: random_walk_step(-9, 1431566170)
+  Exit: random_walk_step(-9, 1431566170) -> -8
+  Enter: random_walk_step(-8, 469192935)
+  Exit: random_walk_step(-8, 469192935) -> -9
+  Enter: random_walk_step(-9, 422344247)
+  Exit: random_walk_step(-9, 422344247) -> -10
+  Enter: random_walk_step(-10, 1689146450)
+  Exit: random_walk_step(-10, 1689146450) -> -9
+  Enter: random_walk_step(-9, 932041360)
+  Exit: random_walk_step(-9, 932041360) -> -8
+  Enter: random_walk_step(-8, 183207520)
+  Exit: random_walk_step(-8, 183207520) -> -7
+  Enter: random_walk_step(-7, 1653858023)
+  Exit: random_walk_step(-7, 1653858023) -> -8
+  Enter: random_walk_step(-8, 2042690320)
+  Exit: random_walk_step(-8, 2042690320) -> -7
+  Enter: random_walk_step(-7, 2145078185)
+  Exit: random_walk_step(-7, 2145078185) -> -8
+  Enter: random_walk_step(-8, 254901822)
+  Exit: random_walk_step(-8, 254901822) -> -7
+  Enter: random_walk_step(-7, 502015127)
+  Exit: random_walk_step(-7, 502015127) -> -8
+  Enter: random_walk_step(-8, 494581272)
+  Exit: random_walk_step(-8, 494581272) -> -7
+  Enter: random_walk_step(-7, 1294903773)
+  Exit: random_walk_step(-7, 1294903773) -> -8
+  Enter: random_walk_step(-8, 1338057278)
+  Exit: random_walk_step(-8, 1338057278) -> -7
+  Enter: random_walk_step(-7, 477614121)
+  Exit: random_walk_step(-7, 477614121) -> -8
+  Enter: random_walk_step(-8, 362811969)
+  Exit: random_walk_step(-8, 362811969) -> -9
+  Enter: random_walk_step(-9, 1209785230)
+  Exit: random_walk_step(-9, 1209785230) -> -8
+  Enter: random_walk_step(-8, 1673227668)
+  Exit: random_walk_step(-8, 1673227668) -> -7
+  Enter: random_walk_step(-7, 1026881423)
+  Exit: random_walk_step(-7, 1026881423) -> -8
+  Enter: random_walk_step(-8, 1042343401)
+  Exit: random_walk_step(-8, 1042343401) -> -9
+  Enter: random_walk_step(-9, 1191333920)
+  Exit: random_walk_step(-9, 1191333920) -> -8
+  Enter: random_walk_step(-8, 519275039)
+  Exit: random_walk_step(-8, 519275039) -> -9
+  Enter: random_walk_step(-9, 1988702605)
+  Exit: random_walk_step(-9, 1988702605) -> -10
+  Enter: random_walk_step(-10, 1941755899)
+  Exit: random_walk_step(-10, 1941755899) -> -11
+  Enter: random_walk_step(-11, 1204018234)
+  Exit: random_walk_step(-11, 1204018234) -> -10
+  Enter: random_walk_step(-10, 204635682)
+  Exit: random_walk_step(-10, 204635682) -> -9
+  Enter: random_walk_step(-9, 1895190735)
+  Exit: random_walk_step(-9, 1895190735) -> -10
+  Enter: random_walk_step(-10, 1450949922)
+  Exit: random_walk_step(-10, 1450949922) -> -9
+  Enter: random_walk_step(-9, 1821572584)
+  Exit: random_walk_step(-9, 1821572584) -> -8
+  Enter: random_walk_step(-8, 291198356)
+  Exit: random_walk_step(-8, 291198356) -> -7
+  Enter: random_walk_step(-7, 1331946269)
+  Exit: random_walk_step(-7, 1331946269) -> -8
+  Enter: random_walk_step(-8, 1105655106)
+  Exit: random_walk_step(-8, 1105655106) -> -7
+  Enter: random_walk_step(-7, 760391291)
+  Exit: random_walk_step(-7, 760391291) -> -8
+  Enter: random_walk_step(-8, 1754290516)
+  Exit: random_walk_step(-8, 1754290516) -> -7
+  Enter: random_walk_step(-7, 647317908)
+  Exit: random_walk_step(-7, 647317908) -> -6
+  Enter: random_walk_step(-6, 1692432651)
+  Exit: random_walk_step(-6, 1692432651) -> -7
+  Enter: random_walk_step(-7, 1937498036)
+  Exit: random_walk_step(-7, 1937498036) -> -6
+Exit: main() -> 0
