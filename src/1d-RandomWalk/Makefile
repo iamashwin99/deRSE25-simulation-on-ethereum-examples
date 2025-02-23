@@ -1,18 +1,22 @@
 CXX = g++
 CXXFLAGS = -std=c++11 -Wall -Werror -g
-TARGET = random_walk
+LDFLAGS = -lssl -lcrypto
+TARGETS = random_walk merkle
 
 all: build
 
-build: $(TARGET)
+build: $(TARGETS)
 
-$(TARGET): main.cpp
-	$(CXX) $(CXXFLAGS) -o $(TARGET) main.cpp
+random_walk: main.cpp
+	$(CXX) $(CXXFLAGS) -o $@ $<
 
-run: $(TARGET)
-	./$(TARGET)
+merkle: merkle.cpp
+	$(CXX) $(CXXFLAGS) -o $@ $< $(LDFLAGS)
+
+run: random_walk merkle
+	./random_walk && ./merkle
 
 clean:
-	rm -f $(TARGET) function_trace.txt
+	rm -f $(TARGETS) function_trace.txt merkle_root.txt
 
 .PHONY: all build run clean
