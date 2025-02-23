@@ -10,9 +10,9 @@ This project acts as a proof of concept.
 In this repo we collect examples of scientific simulations that are run on the Ethereum blockchain.
 Each example has a
 
-- Smart contract written in Solidity that represents the simulation in `src/` directory (Eg. [`PopulationGrowth.sol](src/PopulationGrowth.sol)).
-- An accompanying test file in `test/` directory that tests the simulation contract also written in Solidity (Eg. [`PopulationGrowth.t.sol](test/PopulationGrowth.t.sol)).
-- A deploy script to deploy the contract as well as start the simulation with the right inputs in `script/` directory (Eg. [`PopulationGrowth.s.sol](script/PopulationGrowth.s.sol)).
+- Smart contract written in Solidity that represents the simulation in `src/` directory (Eg. [`PopulationGrowth.sol`](src/PopulationGrowth.sol)).
+- An accompanying test file in `test/` directory that tests the simulation contract also written in Solidity (Eg. [`PopulationGrowth.t.sol`](test/PopulationGrowth.t.sol)).
+- A deploy script to deploy the contract as well as start the simulation with the right inputs in `script/` directory (Eg. [`PopulationGrowth.s.sol`](script/PopulationGrowth.s.sol)).
 Thus demonstrating how these example simulations can be run entirely on a blockchain.
 
 # Examples of simulations
