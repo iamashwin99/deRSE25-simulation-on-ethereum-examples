@@ -14,3 +14,4 @@ docs/
 .env
 broadcast/**/run-latest.json
 src/1d-RandomWalk/random_walk
+src/1d-RandomWalk/function_trace.txt

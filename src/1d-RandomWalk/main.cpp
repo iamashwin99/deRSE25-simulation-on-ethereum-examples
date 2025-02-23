@@ -1,32 +1,76 @@
 #include <iostream>
 #include <cstdlib>
+#include <fstream>
+#include <string>
 
-/**
- * @brief Simulates a single step in a 1D random walk.
- *
- * Given a current position and a random integer, this function determines the next position
- * in the random walk. The step direction (either +1 or -1) is determined by whether the
- * random integer is even or odd.
- *
- * @param position The current position in the 1D random walk.
- * @param rand_int A random integer used to determine the step direction. If even, the step is +1; otherwise, it's -1.
- * @return The new position after taking a single step.
- */
+class FunctionTracer {
+    static std::ofstream trace_file;
+    static int indent_level;
+    const char* name;
+    std::string args;
+    const int& result;
+
+public:
+    template<typename... Args>
+    FunctionTracer(const char* n, const int& ret_val, Args... arguments) : name(n), result(ret_val) {
+        if (!trace_file.is_open()) {
+            trace_file.open("function_trace.txt");
+        }
+        args = build_args(arguments...);
+        write_entry();
+    }
+
+    FunctionTracer(const char* n, const int& ret_val) : name(n), result(ret_val) {
+        if (!trace_file.is_open()) {
+            trace_file.open("function_trace.txt");
+        }
+        write_entry();
+    }
+
+    ~FunctionTracer() {
+        write_exit();
+    }
+
+private:
+    void write_entry() {
+        trace_file << std::string(indent_level, ' ') << "Enter: " << name << "(" << args << ")\n";
+        indent_level += 2;
+    }
+
+    void write_exit() {
+        indent_level -= 2;
+        trace_file << std::string(indent_level, ' ') << "Exit: " << name << "(" << args << ") -> " << result << "\n";
+    }
+
+    template<typename T>
+    std::string build_args(T value) {
+        return std::to_string(value);
+    }
+
+    template<typename T, typename... Args>
+    std::string build_args(T first, Args... rest) {
+        return std::to_string(first) + ", " + build_args(rest...);
+    }
+
+    std::string build_args() { return ""; }
+};
+
+std::ofstream FunctionTracer::trace_file;
+int FunctionTracer::indent_level = 0;
+
+#define TRACE_RETURN(ret_var, ...) \
+    FunctionTracer _tracer(__FUNCTION__, ret_var __VA_OPT__(,) __VA_ARGS__)
+
 int random_walk_step(int position, int rand_int) {
-    return position + (rand_int % 2 == 0 ? 1 : -1);
+    int ret = position + (rand_int % 2 == 0 ? 1 : -1);
+    TRACE_RETURN(ret, position, rand_int);
+    return ret;
 }
 
-/**
- * @brief Main function to simulate a 1D random walk.
- *
- * This function initializes the random seed, the initial position, and then iterates through a loop to simulate the random walk.
- * In each iteration, it calls the random_walk_step function to update the position based on a random integer and prints the current position.
- *
- * @param None
- * @return 0 upon successful execution.
- */
 int main() {
-    std::srand(42);  // Seed for reproducibility
+    int ret = 0;
+    TRACE_RETURN(ret);
+    std::srand(42);
     int position = 0;
     int rand_int = 0;
 
@@ -35,4 +79,6 @@ int main() {
         position = random_walk_step(position, rand_int);
         std::cout << "Step " << i << ": " << position << "\n";
     }
+
+    return ret;
 }

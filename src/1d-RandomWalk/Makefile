@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -std=c++11 -Wall -Werror
+CXXFLAGS = -std=c++11 -Wall -Werror -g
 TARGET = random_walk
 
 all: build
@@ -13,6 +13,6 @@ run: $(TARGET)
 	./$(TARGET)
 
 clean:
-	rm -f $(TARGET)
+	rm -f $(TARGET) function_trace.txt
 
 .PHONY: all build run clean
