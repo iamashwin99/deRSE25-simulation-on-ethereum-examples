@@ -15,7 +15,7 @@ Each example has a
 - A deploy script to deploy the contract as well as start the simulation with the right inputs in `script/` directory (Eg. [`PopulationGrowth.s.sol`](script/PopulationGrowth.s.sol)).
 Thus demonstrating how these example simulations can be run entirely on a blockchain.
 
-# Examples of simulations
+# Examples of simulations (On chain)
 
 ## [Population growth](src/PopulationGrowth.sol)
 
@@ -51,3 +51,15 @@ Example deployment on the testnet:
 - [Simulation transaction](https://sepolia.etherscan.io/tx/0x4f88a06fe28f80f3b5343fc335b0a10f51def1cbc9ecc4b6830ed8245fdabe72)
 - [Simulation logs](https://sepolia.etherscan.io/tx/0x4f88a06fe28f80f3b5343fc335b0a10f51def1cbc9ecc4b6830ed8245fdabe72#eventlog)
 
+
+
+# Examples of simulations (Off chain)
+### [1D Random Walk](src/1d-RandomWalk/README.md)
+
+A simulation of a 1D random walk with cryptographic verification using a Merkle tree. Each step of the walk is recorded and hashed, creating a Merkle tree of the simulation history. The final Merkle root can be stored on-chain as a permanent, verifiable record of the simulation.
+
+Components:
+
+- C++ implementation of the random walk
+- Merkle tree generation using SHA-256
+- Example of off-chain computation with on-chain verification
