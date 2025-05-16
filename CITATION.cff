@@ -1,0 +1,49 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Simulation on Ethereum
+message: >-
+  Example repository to demonstrate running simulations on
+  chain and off chain. 
+type: software
+authors:
+  - given-names: Ashwin Kumar
+    family-names: Karnad
+    email: a.karnad@fz-juelich.de
+    name-particle: Ashwin Kumar
+    affiliation: Forschungszentrum Jülich
+    orcid: 'https://orcid.org/0000-0001-8162-1957'
+repository-code: >-
+  https://github.com/iamashwin99/deRSE25-simulation-on-ethereum-examples
+abstract: >-
+  Ensuring the reproducibility of scientific simulations is
+  a persistent challenge,
+
+  despite current best practices like version control and
+  containerization.
+
+  Factors such as floating-point arithmetic variations,
+  hardware differences, and concurrency issues often prevent
+  bit-for-bit replication of results.
+
+  This paper investigates the solutions for deterministic
+  computations that distributed ledger technologies employ
+  and application of these concepts to enhance the
+  reproducibility, trustworthiness and verifiability of
+  scientific simulations.
+
+  We explore two primary approaches: executing simulations
+  directly ``on-chain'' for complete transparency and
+  deterministic replay, and performing computations
+  ``off-chain'' while anchoring their integrity to a
+  blockchain via cryptographic proofs, such as
+  Zero-Knowledge Proofs (ZKPs) and Merkle trees.
+keywords:
+  - Reproducibility,
+  - Distributed Ledger Technology,
+  - Blockchain,
+  - Deterministic Execution,
+  - Zero-Knowledge Proofs
+  - Scientific Simulation
+license: MIT
