@@ -3,6 +3,7 @@
 #include <fstream>
 #include <string>
 
+#ifdef ENABLE_INSTRUMENTATION
 class FunctionTracer {
     static std::ofstream trace_file;
     static int indent_level;
@@ -60,6 +61,9 @@ int FunctionTracer::indent_level = 0;
 
 #define TRACE_RETURN(ret_var, ...) \
     FunctionTracer _tracer(__FUNCTION__, ret_var __VA_OPT__(,) __VA_ARGS__)
+#else
+#define TRACE_RETURN(ret_var, ...) // No-op when instrumentation is disabled
+#endif
 
 int random_walk_step(int position, int rand_int) {
     int ret = position + (rand_int % 2 == 0 ? 1 : -1);
