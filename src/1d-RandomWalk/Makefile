@@ -8,7 +8,7 @@ all: build
 build: $(TARGETS)
 
 random_walk: main.cpp
-	$(CXX) $(CXXFLAGS) -o $@ $<
+	$(CXX) $(CXXFLAGS) -DENABLE_INSTRUMENTATION -o $@ $<
 
 merkle: merkle.cpp
 	$(CXX) $(CXXFLAGS) -o $@ $< $(LDFLAGS)
