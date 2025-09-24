@@ -1,0 +1,23 @@
+Performance Comparison Report
+============================
+Date: Wed Sep 24 10:28:19 AM CEST 2025
+Test Configuration: 1,000,000 random walk steps
+Run on CPU: Intel(R) Core(TM) Ultra 5 135U
+
+Testing with instrumentation (3 runs):
+real 1.99
+real 1.99
+real 2.01
+
+Testing without instrumentation (3 runs):
+real 0.24
+real 0.25
+real 0.23
+
+- Instrumented version includes function call tracing overhead
+- Non-instrumented version has no tracing code compiled in
+- Each run performs 1,000,000 function calls to random_walk_step()
+- File I/O overhead in instrumented version affects performance
+
+Trace file size: 89M function_trace.txt
+
