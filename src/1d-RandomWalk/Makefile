@@ -27,6 +27,7 @@ instrumentation_comparison: main.cpp
 	@echo "============================" >> performance_comparison.txt
 	@/bin/bash -c 'echo "Date: $$(date)"' >> performance_comparison.txt
 	@echo "Test Configuration: 1,000,000 random walk steps" >> performance_comparison.txt
+	@echo "Run on CPU: $$(lscpu | grep 'Model name' | cut -f 2 -d ':' | awk '{$$1=$$1}1')" >> performance_comparison.txt
 	@echo "" >> performance_comparison.txt
 	@echo "Testing with instrumentation (3 runs):" >> performance_comparison.txt
 	@/bin/bash -c '(time -p ./random_walk_instrumented > /dev/null) 2>&1 | grep real' >> performance_comparison.txt
