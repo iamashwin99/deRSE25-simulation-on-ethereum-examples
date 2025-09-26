@@ -17,10 +17,10 @@ contract QuantumEntanglementScript is Script {
         // Create Bell state
         int256[4] memory bellState = quantum.createBellState();
         console.log("Bell state created with amplitudes:");
-        console.log("  |00>:", int(bellState[0]));
-        console.log("  |01>:", int(bellState[1]));
-        console.log("  |10>:", int(bellState[2]));
-        console.log("  |11>:", int(bellState[3]));
+        console.log("  |00>:", int256(bellState[0]));
+        console.log("  |01>:", int256(bellState[1]));
+        console.log("  |10>:", int256(bellState[2]));
+        console.log("  |11>:", int256(bellState[3]));
 
         vm.stopBroadcast();
     }

@@ -52,9 +52,9 @@ contract QuantumEntanglement {
         // Expand to two-qubit state (tensor product with |0⟩)
         int256[4] memory twoQubitState = [
             hadamardState[0], // amplitude for |00⟩
-            int256(0),        // amplitude for |01⟩
+            int256(0), // amplitude for |01⟩
             hadamardState[1], // amplitude for |10⟩
-            int256(0)         // amplitude for |11⟩
+            int256(0) // amplitude for |11⟩
         ];
 
         // Apply CNOT to create entanglement

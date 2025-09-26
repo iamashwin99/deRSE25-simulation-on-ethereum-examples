@@ -26,19 +26,19 @@ contract QuantumEntanglementTest is Test {
     function testCNOTGate() public {
         // Test CNOT on |10⟩ state
         int256[4] memory initialState = [
-            int256(0),    // |00⟩
-            int256(0),    // |01⟩
-            int256(SCALE),// |10⟩
-            int256(0)     // |11⟩
+            int256(0), // |00⟩
+            int256(0), // |01⟩
+            int256(SCALE), // |10⟩
+            int256(0) // |11⟩
         ];
 
         int256[4] memory result = quantum.applyCNOT(initialState);
 
         // CNOT should flip the second qubit when first qubit is |1⟩
         // So |10⟩ should become |11⟩
-        assertEq(uint256(int256(result[0])), 0);    // |00⟩ amplitude
-        assertEq(uint256(int256(result[1])), 0);    // |01⟩ amplitude
-        assertEq(uint256(int256(result[2])), 0);    // |10⟩ amplitude
+        assertEq(uint256(int256(result[0])), 0); // |00⟩ amplitude
+        assertEq(uint256(int256(result[1])), 0); // |01⟩ amplitude
+        assertEq(uint256(int256(result[2])), 0); // |10⟩ amplitude
         assertEq(uint256(int256(result[3])), uint256(SCALE)); // |11⟩ amplitude
     }
 
@@ -48,8 +48,8 @@ contract QuantumEntanglementTest is Test {
         // Bell state should be 1/√2(|00⟩ + |11⟩)
         // With our scaling, each non-zero component should be around 707
         assertApproxEqual(bellState[0], 707, 1); // |00⟩ component
-        assertEq(uint256(int256(bellState[1])), 0);               // |01⟩ component
-        assertEq(uint256(int256(bellState[2])), 0);               // |10⟩ component
+        assertEq(uint256(int256(bellState[1])), 0); // |01⟩ component
+        assertEq(uint256(int256(bellState[2])), 0); // |10⟩ component
         assertApproxEqual(bellState[3], 707, 1); // |11⟩ component
     }
 
