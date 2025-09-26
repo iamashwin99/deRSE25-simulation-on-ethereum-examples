@@ -1,5 +1,7 @@
 # Simulation on Ethereum
 
+[![DOI](https://zenodo.org/badge/920147771.svg)](https://doi.org/10.5281/zenodo.17205847)
+
 The reproducibility of scientific simulations (ie Research Group A can run and verify the results produced by Research Group B exactly) is one of the key challenges of scientific research.
 
 The proposed solution is to bring the entire computation on chain.
